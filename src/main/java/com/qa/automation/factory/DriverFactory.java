@@ -8,6 +8,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class DriverFactory {
 
     public WebDriver driver;
+    //not going to work until prop class is created
+    public static String highlight;
 
     public WebDriver initDriver(String browserName) {
         System.out.println("browser name is: " + browserName);
