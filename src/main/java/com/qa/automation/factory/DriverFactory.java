@@ -20,6 +20,7 @@ public class DriverFactory {
 
     public WebDriver initDriver(Properties prop) {
         optionsManager = new OptionsManager(prop);
+        highlight = prop.getProperty("highlight").trim();
         String browserName = prop.getProperty("browser").toLowerCase().trim();
         System.out.println("browser name is: " + browserName);
 
